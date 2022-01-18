@@ -2,16 +2,31 @@
   "name": "q-migration-api",
   "version": "1.0.0",
   "description": "Aplicação de Upload e tratamendo de dados dos arquivos importados.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon",
+    "lint": "eslint --ext .js -f ./node_modules/eslint-friendly-formatter . --fix",
+    "prepush": "npm run lint",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MaxuelLessa/q-migration-api.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "nodeja",
+    "api",
+    "crud",
+    "azure-functions",
+    "express",
+    "github-actions",
+    "swa",
+    "serverless",
+    "azure",
+    "sqlserver",
+    "javascript"
+  ],
+  "author": "Maxuel Lessa",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MaxuelLessa/q-migration-api/issues"
@@ -25,6 +40,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^14.2.0",
+    "eslint-friendly-formatter": "^4.0.1",
     "express": "^4.17.2",
     "express-promise-router": "^4.1.1"
   }
